@@ -169,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfh-OY-rXY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1165.6488549618321" y="-351.40845070422534"/>
+            <point key="canvasLocation" x="1166" y="-286"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Onm-hz-9cb">
@@ -259,7 +259,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bB2-f4-FU4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1165.6488549618321" y="471.83098591549299"/>
+            <point key="canvasLocation" x="1166" y="401"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="yzE-7O-zzS">
@@ -356,7 +356,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tCt-5S-byP"/>
+        <segue reference="Q8d-eF-OdR"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
