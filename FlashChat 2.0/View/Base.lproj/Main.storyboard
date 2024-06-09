@@ -340,7 +340,13 @@
                             <constraint firstItem="X7T-hQ-jYO" firstAttribute="leading" secondItem="R1e-KT-wka" secondAttribute="leading" id="v5S-HJ-Y6G"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7Kl-yM-urI"/>
+                    <navigationItem key="navigationItem" id="7Kl-yM-urI">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="Jbf-ui-82X">
+                            <connections>
+                                <action selector="LogOutGotPressed:" destination="jg2-WB-R1M" id="vz8-5o-oEI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TaC-FN-vQ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
