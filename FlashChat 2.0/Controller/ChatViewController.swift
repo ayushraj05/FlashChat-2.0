@@ -6,12 +6,13 @@
 //
 
 import UIKit
-import FirebaseAuth
+import Firebase
 
 class ChatViewController: UIViewController {
 
     @IBOutlet weak var TableView: UITableView!
     @IBOutlet weak var messageTextField: UITextField!
+    let db = Firestore.firestore()
     
     var messages: [Message] = [
         Message(sender: "a@b.com", body: "Hey there!"),
@@ -29,6 +30,9 @@ class ChatViewController: UIViewController {
     }
     
     @IBAction func SendMessageGotPressed(_ sender: UIButton) {
+        if let messageBody = messageTextField.text ,let messageSender = Auth.auth().currentUser?.email {
+            db.collection(K.FStore.collectionName)
+        }
         
     }
     
