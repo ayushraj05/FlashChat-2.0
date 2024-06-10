@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6343640B2C162E05003B05BE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6343640A2C162E05003B05BE /* Constants.swift */; };
+		6395F9312C170F7C000F53AD /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395F9302C170F7C000F53AD /* Message.swift */; };
 		63A5E6DC2C15B10000EE0A61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A5E6DB2C15B10000EE0A61 /* AppDelegate.swift */; };
 		63A5E6DE2C15B10000EE0A61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A5E6DD2C15B10000EE0A61 /* SceneDelegate.swift */; };
 		63A5E6E32C15B10000EE0A61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A5E6E12C15B10000EE0A61 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		6343640A2C162E05003B05BE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6395F9302C170F7C000F53AD /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		63A5E6D82C15B10000EE0A61 /* FlashChat 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlashChat 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A5E6DB2C15B10000EE0A61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A5E6DD2C15B10000EE0A61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,7 +108,7 @@
 		6343640C2C162E12003B05BE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6343640A2C162E05003B05BE /* Constants.swift */,
+				6395F9302C170F7C000F53AD /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,6 +137,7 @@
 				6343640C2C162E12003B05BE /* Model */,
 				63A5E6EF2C15B34200EE0A61 /* View */,
 				63A5E6F22C15B37700EE0A61 /* Controller */,
+				6343640A2C162E05003B05BE /* Constants.swift */,
 				63A5E6E42C15B10100EE0A61 /* Assets.xcassets */,
 				63A5E6E62C15B10100EE0A61 /* LaunchScreen.storyboard */,
 				63A5E6F92C15CAF400EE0A61 /* GoogleService-Info.plist */,
@@ -272,6 +275,7 @@
 				63A5E6F42C15B39100EE0A61 /* ChatViewController.swift in Sources */,
 				63A5E6F82C15B3B700EE0A61 /* RegisterViewController.swift in Sources */,
 				6343640B2C162E05003B05BE /* Constants.swift in Sources */,
+				6395F9312C170F7C000F53AD /* Message.swift in Sources */,
 				63A5E6F62C15B3A200EE0A61 /* LoginViewController.swift in Sources */,
 				63A5E6DE2C15B10000EE0A61 /* SceneDelegate.swift in Sources */,
 			);
