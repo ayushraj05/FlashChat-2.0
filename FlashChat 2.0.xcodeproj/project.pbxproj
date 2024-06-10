@@ -16,6 +16,7 @@
 		6395F93B2C172C58000F53AD /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6395F93A2C172C58000F53AD /* FirebaseAnalyticsSwift */; };
 		6395F93D2C172C58000F53AD /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 6395F93C2C172C58000F53AD /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		6395F93F2C172C58000F53AD /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 6395F93E2C172C58000F53AD /* FirebaseAppCheck */; };
+		6395F9422C177E78000F53AD /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6395F9412C177E78000F53AD /* IQKeyboardManagerSwift */; };
 		63A5E6DC2C15B10000EE0A61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A5E6DB2C15B10000EE0A61 /* AppDelegate.swift */; };
 		63A5E6DE2C15B10000EE0A61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A5E6DD2C15B10000EE0A61 /* SceneDelegate.swift */; };
 		63A5E6E32C15B10000EE0A61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A5E6E12C15B10000EE0A61 /* Main.storyboard */; };
@@ -101,6 +102,7 @@
 				63A5E7112C15CE0500EE0A61 /* FirebaseDatabaseSwift in Frameworks */,
 				63A5E71B2C15CE0500EE0A61 /* FirebaseFunctions in Frameworks */,
 				63A5E7312C15CE0500EE0A61 /* FirebaseStorageCombine-Community in Frameworks */,
+				6395F9422C177E78000F53AD /* IQKeyboardManagerSwift in Frameworks */,
 				63A5E72B2C15CE0500EE0A61 /* FirebaseRemoteConfig in Frameworks */,
 				63A5E7072C15CE0500EE0A61 /* FirebaseAppDistribution-Beta in Frameworks */,
 				63A5E70B2C15CE0500EE0A61 /* FirebaseAuthCombine-Community in Frameworks */,
@@ -231,6 +233,7 @@
 				6395F93A2C172C58000F53AD /* FirebaseAnalyticsSwift */,
 				6395F93C2C172C58000F53AD /* FirebaseAnalyticsWithoutAdIdSupport */,
 				6395F93E2C172C58000F53AD /* FirebaseAppCheck */,
+				6395F9412C177E78000F53AD /* IQKeyboardManagerSwift */,
 			);
 			productName = "FlashChat 2.0";
 			productReference = 63A5E6D82C15B10000EE0A61 /* FlashChat 2.0.app */;
@@ -262,6 +265,7 @@
 			mainGroup = 63A5E6CF2C15B10000EE0A61;
 			packageReferences = (
 				63A5E6FB2C15CE0500EE0A61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				6395F9402C177E78000F53AD /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 63A5E6D92C15B10000EE0A61 /* Products */;
 			projectDirPath = "";
@@ -529,6 +533,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6395F9402C177E78000F53AD /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.3;
+			};
+		};
 		63A5E6FB2C15CE0500EE0A61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -564,6 +576,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 63A5E6FB2C15CE0500EE0A61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAppCheck;
+		};
+		6395F9412C177E78000F53AD /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6395F9402C177E78000F53AD /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 		63A5E6FC2C15CE0500EE0A61 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
