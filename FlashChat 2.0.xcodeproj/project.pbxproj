@@ -537,8 +537,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.3;
+				kind = exactVersion;
+				version = 6.5.3;
 			};
 		};
 		63A5E6FB2C15CE0500EE0A61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
