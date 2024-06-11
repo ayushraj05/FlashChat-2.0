@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import FirebaseCore
+import Firebase
 import FirebaseFirestore
 import IQKeyboardManagerSwift
 
@@ -17,12 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let providerFactory = AppCheckDebugProviderFactory()
+        AppCheck.setAppCheckProviderFactory(providerFactory)
         FirebaseApp.configure()
+        
+        
+//        xcodebuild test -scheme YourTestScheme -FlashChat_2_0.xcworkspace \
+//        APP_CHECK_DEBUG_TOKEN=$(F1A16827-3426-404C-9E9D-5E41929A3BEC)
+        
         let db = Firestore.firestore()
         print(db)
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.enableAutoToolbar = false
-        IQKeyboardManager.shared.resignOnTouchOutside = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         return true
     }
 
