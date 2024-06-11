@@ -58,7 +58,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bJo-qE-Mhm"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Qob-qk-10F" firstAttribute="centerX" secondItem="W1W-pm-voU" secondAttribute="centerX" id="2VL-Vn-f1E"/>
                             <constraint firstItem="bjl-jS-zZ4" firstAttribute="leading" secondItem="bJo-qE-Mhm" secondAttribute="leading" id="6xY-6b-zhF"/>
@@ -81,7 +81,7 @@
             </objects>
             <point key="canvasLocation" x="399.23664122137404" y="3.5211267605633805"/>
         </scene>
-        <!--Register View Controller-->
+        <!--Registeration Page-->
         <scene sceneID="uYk-Pz-itw">
             <objects>
                 <viewController id="QDd-Rr-L2w" customClass="RegisterViewController" customModule="FlashChat_2_0" customModuleProvider="target" sceneMemberID="viewController">
@@ -165,7 +165,7 @@
                             <constraint firstItem="EwC-SC-mCS" firstAttribute="top" secondItem="u56-G2-WjF" secondAttribute="bottom" constant="-100" id="feb-qg-ZlC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="l5Q-5k-Uic"/>
+                    <navigationItem key="navigationItem" title="Registeration Page" id="l5Q-5k-Uic"/>
                     <connections>
                         <outlet property="emailTextField" destination="841-o7-RjW" id="Bot-ff-cOC"/>
                         <outlet property="passwordTextField" destination="zgI-Ly-F0L" id="PFL-cC-qe7"/>
@@ -176,7 +176,7 @@
             </objects>
             <point key="canvasLocation" x="1166" y="-313"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Login Page-->
         <scene sceneID="Onm-hz-9cb">
             <objects>
                 <viewController id="WhR-rt-IdG" customClass="LoginViewController" customModule="FlashChat_2_0" customModuleProvider="target" sceneMemberID="viewController">
@@ -260,7 +260,7 @@
                             <constraint firstItem="R4a-mx-v9g" firstAttribute="leading" secondItem="z0p-Xy-Hd0" secondAttribute="leading" id="vTi-Eh-m9u"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="dGF-5H-4AT"/>
+                    <navigationItem key="navigationItem" title="Login Page" id="dGF-5H-4AT"/>
                     <connections>
                         <outlet property="emailTextField" destination="NTM-aJ-USZ" id="bTe-86-p0w"/>
                         <outlet property="passwordTextField" destination="Ul2-Ha-dRA" id="gPS-4C-iMg"/>
@@ -271,7 +271,7 @@
             </objects>
             <point key="canvasLocation" x="1166" y="389"/>
         </scene>
-        <!--Chat View Controller-->
+        <!--⚡️FlashChat 2.0-->
         <scene sceneID="yzE-7O-zzS">
             <objects>
                 <viewController id="jg2-WB-R1M" customClass="ChatViewController" customModule="FlashChat_2_0" customModuleProvider="target" sceneMemberID="viewController">
@@ -333,7 +333,7 @@
                             <constraint firstItem="X7T-hQ-jYO" firstAttribute="leading" secondItem="R1e-KT-wka" secondAttribute="leading" id="v5S-HJ-Y6G"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7Kl-yM-urI">
+                    <navigationItem key="navigationItem" title="⚡️FlashChat 2.0" id="7Kl-yM-urI">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="Jbf-ui-82X">
                             <connections>
                                 <action selector="LogOutGotPressed:" destination="jg2-WB-R1M" id="vz8-5o-oEI"/>
@@ -357,6 +357,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vae-HE-1hc">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="BrandBlue"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="014-DG-OfS">
@@ -372,7 +378,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tCt-5S-byP"/>
+        <segue reference="Q8d-eF-OdR"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
@@ -389,9 +395,6 @@
         <namedColor name="BrandPurple">
             <color red="0.67500001192092896" green="0.43500000238418579" blue="0.9179999828338623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
