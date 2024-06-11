@@ -49,6 +49,8 @@ class ChatViewController: UIViewController {
                             
                             DispatchQueue.main.async {
                                 self.TableView.reloadData()
+                                let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+                                self.TableView.scrollToRow(at: indexPath, at: .top, animated: false)
                             }
                         }
                     }
@@ -58,7 +60,7 @@ class ChatViewController: UIViewController {
     }
     
     @IBAction func SendMessageGotPressed(_ sender: UIButton) {
-        if let messageBody = messageTextField.text ,let messageSender = Auth.auth().currentUser?.email {
+        if let messageBody = messageTextField.text , let messageSender = Auth.auth().currentUser?.email {
             db.collection(K.FStore.collectionName).addDocument(data: [
                 K.FStore.senderField: messageSender, 
                 K.FStore.bodyField: messageBody,
@@ -68,6 +70,10 @@ class ChatViewController: UIViewController {
                     print(e)
                 } else{
                     print("data saved to db ")
+                    DispatchQueue.main.async{
+                        self.messageTextField.text = ""
+                    }
+                    
                 }
             }
         }
@@ -94,9 +100,24 @@ extension ChatViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
+        let message = messages[indexPath.row]
         
-        cell.MessageLable.text = messages[indexPath.row].body
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
+        cell.MessageLable.text = message.body
+        //message from current user
+        if message.sender == Auth.auth().currentUser?.email{
+            cell.leftImageView.isHidden = true
+            cell.rightImageView.isHidden = false
+            cell.MessageBubble.backgroundColor = UIColor.brandLightPurple
+            cell.MessageLable.textColor = UIColor.brandPurple
+        } else{ //message from other user
+            cell.leftImageView.isHidden = false
+            cell.rightImageView.isHidden = true
+            cell.MessageBubble.backgroundColor = UIColor.brandPurple
+            cell.MessageLable.textColor = UIColor.brandLightPurple
+        }
+        
+        
         return cell
     }
     
